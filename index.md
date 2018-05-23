@@ -2,8 +2,8 @@
 
 The Open Water Foundation (OWF) is a nonprofit social enterprise that focuses on open source software
 and open data to make better decisions about water resources.
-Water is a public resource and we believen that data and software tools should also be public
-(while also allowing for commercial solutions to be built on and in conjunction with open solutions).  See:
+Water is a public resource and we believe that data and software tools should also be public
+(while also allowing for commercial solutions to be created that leverage open solutions).  See:
 
 * [Open Water Foundation website](http://openwaterfoundation.org) for more information about OWF
 * [Open Water Foundation GitHub repositories](https://github.com/OpenWaterFoundation)
@@ -44,7 +44,7 @@ using a dash-delimited repository name with names that include:
 
 ## Grouping Repositories for Products ##
 
-Some repositories are intended to be used together, in which case the leading part of the repostory names
+Some repositories are intended to be used together, in which case the leading part of the repository names
 will often be consistent.  For example:
 
 * owf-app-geoprocessor-python
@@ -71,13 +71,13 @@ Consequently, the grouped repositories are transportable between entities.
 
 Repositories that are related to data and information may be related as shown in the following diagram.
 
-![Data / Visualization/ Story](images/data-viz-story.png)
+![Data / Visualization/ Story](images/data-viz-story-hierarchy.png)
 
 In this case, the goal is to separate concerns related to data, visualization, and stories so that
 the specific product in the hierarchy can be independently maintained and can be layered as needed.
 For example, the following situations may occur:
 
-* Repository contains realatively simple dataset that is versioned in Excel.
+* Repository contains relatively simple dataset that is versioned in Excel.
 * Repository contains simple dataset that is versioned in Excel and also includes basic visualization to
 understand context of data and quality control.
   + The visualization is mainly used in local files when the dataset is being reviewed for quality.
@@ -94,4 +94,3 @@ maintained in separate repositories.
 To accomplish the above, local computer repositories may be organized as in the previous section,
 and a simple Python (or other suitable) web server is run to view a visualization or story locally
 before publishing to the web.
-
