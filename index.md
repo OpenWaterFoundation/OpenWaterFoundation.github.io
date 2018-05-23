@@ -1,4 +1,7 @@
-# Open Water Foundation on GitHub
+---
+title: Open Water Foundation GitHub Page
+---
+# About the Open Water Foundation
 
 The Open Water Foundation (OWF) is a nonprofit social enterprise that focuses on open source software
 and open data to make better decisions about water resources.
@@ -13,48 +16,48 @@ OWF tries to make its work public via GitHub and other cloud resources.
 ## Repository Naming Conventions ##
 
 Most OWF GitHub repositories follow a naming convention that helps keep repositories organized,
-using a dash-delimited repository name with names that include:
+using a dash-delimited repository names that may include:
 
 * Owner/Steward/System
-  + First part of the repository name indicates the owner/steward or system for the work.
-  + "owf" indicates product created by OWF.
-  + "cdss" indicates product that is part of Colorado's Decision Support Systems (CDSS).
+  + First part of the repository name indicates the owner/steward or system encompassing the work.
+  + For example, `owf` indicates a product owned by or attributed to OWF.
+  + For example, `cdss` indicates a product that is part of Colorado's Decision Support Systems (CDSS).
 * Data/Visualizations/Stories
-  + "data" indicates a dataset, for example maintained in Excel and exported to other forms such as
-  comma-separated value and GeoJSON.
-  + "viz" indicates a visualization, typically a stand-alone website that can be viewed locally with a Python http server,
+  + `data` indicates a dataset, for example maintained in Excel and exported to other forms such as
+  comma-separated value (CSV) and GeoJSON files.
+  + `viz` indicates a visualization, typically a stand-alone website that can be viewed locally with a Python http server,
   and can be published as a static website.
-  + "story" indicates a story.
+  + `story` indicates a story.
 * Model/analysis
-  + "model" indicates a model.
+  + `model` indicates a model.
 * Project
-  + "proj" indicates project files.
+  + `proj` indicates project files, for example when a static website is used to coordinate a project.
 * Software
-  + "lib" indicates a library.
-  + "app" indicates an desktop application.
-  + "webapp" indicates a web application.
-  + "ws" indicates web service.
-  + "util" indicates utility.
-  + "java", "python", "fortran", "js", etc. indicate the primary programming language.
+  + `lib` indicates a library.
+  + `app` indicates an desktop application.
+  + `webapp` indicates a web application.
+  + `ws` indicates web service.
+  + `util` indicates utility.
+  + `java`, `python`, `fortran`, `js`, etc. indicate the primary programming language.
 * Documentation
-  + "learn" indicates training/learning resources.
-  + "doc-dev" indicates developer documentation.
-  + "doc-user" indicates user documentation.
-  + "website" indicates a website.
+  + `learn` indicates training/learning resources.
+  + `doc-dev` indicates developer documentation.
+  + `doc-user` indicates user documentation.
+  + `website` indicates a website.
 
 ## Grouping Repositories for Products ##
 
 Some repositories are intended to be used together, in which case the leading part of the repository names
 will often be consistent.  For example:
 
-* owf-app-geoprocessor-python
-* owf-app-geoprocessor-python-test
-* owf-app-geoprocessor-python-doc-user
+* `owf-app-geoprocessor-python` - main software code repository
+* `owf-app-geoprocessor-python-test` - functional tests
+* `owf-app-geoprocessor-python-doc-user` - user documentation
 
 To coordinate product development, OWF typically recommends using a folder structure that represents
 organization / product / git-repos / repositories..., for example:
 
-```
+```text
 C:\Users\user\                                         User files.
     owf-dev\                                           Work for an organization/system.
         GeoProcessor\                                  Product.
@@ -89,7 +92,8 @@ maintained in separate repositories.
   + The visualization and data are published/deployed on a website (or multiple websites).
 * Repository contains a story that leverages one or more datasets and one or more visualizations.
   + The story can link to local computer resources for development,
-  and may refer to published visualizations and datasets.
+  and may refer to published visualizations and datasets so that the deployed story has
+  working links.
   
 To accomplish the above, local computer repositories may be organized as in the previous section,
 and a simple Python (or other suitable) web server is run to view a visualization or story locally
